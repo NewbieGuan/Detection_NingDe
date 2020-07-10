@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>D:\Teledyne DALSA\Sapera\Classes\Basic;D:\Teledyne DALSA\Sapera\Classes\Gui;D:\Teledyne DALSA\Sapera\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Teledyne DALSA\Sapera\Lib\Win64;D:\Teledyne DALSA\Sapera\Lib\Win64\VS2012;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>corapi.lib;SapClassBasic.lib;SapClassGuiD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

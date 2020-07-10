@@ -1,0 +1,9 @@
+
+[SysParamSetting]
+
+[ErrSaveToFile]=1
+[RecordZeroDis]=0
+[LastOutStatus]=0
+[SetFifoLen]=50
+[BacklashStep]=500
+[HomeAndElFlag]=1
