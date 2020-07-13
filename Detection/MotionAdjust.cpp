@@ -130,16 +130,15 @@ void CMotionAdjust::InitParam()
 
 	m_iDirectionPlatform = IDC_RADIO_POSITIVE_PLATFORM;    // 初始化平台为运动方向为正
 
-	m_sSpeedCamera = "3000";         // 初始化相机运动速度  3000 mm/min
+	m_sSpeedCamera = "600";         // 初始化相机运动速度  600 mm/min
 	m_sDistanceCamera = "20";      // 初始化相机运动距离   20 mm
 
-	m_sSpeedPlatform = "3000";       // 初始化平台运动速度  600 mm/min
+	m_sSpeedPlatform = "600";       // 初始化平台运动速度  600 mm/min
 	m_sDistancePlatform = "20";    // 初始化平台运动距离    20 mm
 
 
 	CString strPluse;
 	::GetPrivateProfileString(_T("SaveInfo"), _T("脉冲当量"), strPluse, strPluse.GetBuffer(MAX_PATH), MAX_PATH, _T("..\\SystemPara.ini"));
-	GetDlgItem(IDC_EDIT_MODIFY_MOTION_PARA_PULSE)->SetWindowText(strPluse);
 	m_steps_mm = _ttoi(strPluse); //200
 
 	// 电机每转需要的脉冲数   注意换算脉冲当量

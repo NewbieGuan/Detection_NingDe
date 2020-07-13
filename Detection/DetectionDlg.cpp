@@ -969,7 +969,7 @@ void CDetectionDlg::OnBnClickedBtnStartDetection()
 	}
 
 	//保证每长条截取长度小于设定距离
-	if ((sampleCountStrip * 2138 * m_resolution) > m_sDistanceCamera * m_steps_mm) //2138是随便取了一个比2048略大的值
+	if ((sampleCountStrip * 2138 * m_resolution) > m_sDistanceCamera * 1000) //2138是随便取了一个比2048略大的值
 	{
 		AfxMessageBox(_T("每条取样帧数太大，需要变小！"));
 		return;

@@ -17,7 +17,7 @@ CMotionPara::CMotionPara(CWnd* pParent /*=NULL*/)
 	m_sSetDistanceCamera = _T("55");
 	m_sSetDistancePlatform = _T("46");
 	m_sSetSpeedCamera = _T("600");
-	m_sSetSpeedPlatform = _T("3000");
+	m_sSetSpeedPlatform = _T("600");
 }
 
 CMotionPara::~CMotionPara()
